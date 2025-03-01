@@ -1,0 +1,38 @@
+<div class="wrapper">
+    <header class="header">
+        <div id="nav-placeholder"></div>
+    </header>
+    <main class="content-container">
+        <div class="page-container">
+            <div class="card-container2">
+                <h3>Daughters of Grace Ministry</h3>
+                <p>
+                    is dedicated to empowering teenage girls in underprivileged areas through weekly preaching and discipleship programs. In addition to spiritual growth, the ministry provides crucial social and psychological support, focusing on cases of physical and substance abuse. Currently serving five regions within Greater Cairo, the ministry operates with a committed 17-member team of leaders and volunteers, working to bring hope and transformation to young girls in need.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="daughters.jpg" alt="Image Description">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div id="footer-placeholder"></div>
+    </footer>
+</div>
+
+<!-- Scripts remain unchanged -->
+
+<script defer>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+<script defer src="script.js"></script>

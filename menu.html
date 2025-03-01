@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YFCI Inspired Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Only load FontAwesome if it's used; optimized to use the minified version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-6t3lV72xkD/tViEVv6F4xd6Rv58BQFrHgSFlD72ohktRloC9r8FSu9tAgVx1kK79tWwUcwZNo8M4MltwKmG2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="nav-container">
+        <a href="./index.html" class="logo"> <img class="logoimg" src="logo.jpeg"> </a>
+       
+        <button class="menu-toggle" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+        <ul class="nav-menu" aria-expanded="false">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            
+            <li class="has-dropdown">
+                <a href="#" class="nav-link">Ministries <i class="fas fa-chevron-down"></i></a>
+                <div class="submenu">
+                    <div class="submenu-section">
+                        <h4 class="submenu-header">Cairo</h4>
+                        <ul>
+                            <li><a href="./dograceeng.html" class="submenu-item">Daughters of Grace</a></li>
+                            <li><a href="#" class="submenu-item">The Super Woman</a></li>
+                        </ul>
+                    </div>
+                    <div class="submenu-section">
+                        <h4 class="submenu-header">Other Locations</h4>
+                        <ul>
+                            <li><a href="#" class="submenu-item">Ministry 3</a></li>
+                            <li><a href="#" class="submenu-item">Ministry 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#" class="nav-link">Resources</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script defer>
+        // Toggle menu visibility for mobile view
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const menu = document.querySelector('.nav-menu');
+            const expanded = menu.getAttribute('aria-expanded') === 'true';
+            menu.setAttribute('aria-expanded', !expanded);
+        });
+    </script>
+</body>
+</html>

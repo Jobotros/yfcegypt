@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <header class="header">
+        <div id="nav-placeholder"></div>
+    </header>
+    <main class="content-container">
+        <div class="page-container">
+            <div class="card-container2">
+                <h3>About YFC Egypt: A Brief History</h3>
+                <p>
+                    YFC Egypt began in 2000, inspired by the support of Bob Moffett and John Sagherian.
+                    Initially established as a pioneering nation, it was part of the MENA region
+                    (Middle East and North Africa) before transitioning to the EMENA region
+                    (Europe, Middle East, and North Africa). In its early years, YFC Egypt operated under the Anglican
+                    Church until 2008, when it came under the Evangelical Fellowship of Egypt,
+                    continuing its mission of youth outreach and development.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="soccer.jpg" alt="Image Description">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div id="footer-placeholder"></div>
+    </footer>
+</div>
+
+<!-- Scripts remain unchanged -->
+
+<script defer>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+<script defer src="script.js"></script>
